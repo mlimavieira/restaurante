@@ -1,0 +1,9 @@
+require 'test_helper'
+
+class RestauranteTest < ActiveSupport::TestCase
+  
+  test "Nao deve gravar restaurantes sem nome" do
+    r = Restaurante.new
+    assert_equal false, r.save
+  end
+end

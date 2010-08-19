@@ -1,0 +1,23 @@
+<h1>Listagem de clientes</h1>
+
+<table border="1">
+  <tr>
+    <th>Nome</th>
+    <th>Idade</th>
+    <th>...</th>
+  </tr>
+
+<% @clientes.each do |cliente| %>
+  <tr>
+    <td><%=h cliente.nome %></td>
+    <td><%=h cliente.idade %></td>
+    <td><%= link_to 'Show', cliente %>&nbsp;
+	<%= link_to 'Edit', edit_cliente_path(cliente) %>&nbsp;
+	<%= link_to 'Destroy', cliente, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Novo cliente', new_cliente_path %>

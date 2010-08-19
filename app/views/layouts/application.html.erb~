@@ -1,0 +1,12 @@
+<html>
+	<head>
+		<title> Programa de Qualificacao de Restaurantes </title>
+		<%= stylesheet_link_tag 'scaffold' %>
+	</head>
+	<body>
+		<%= menu_principal %>
+		<p style="color: green"> <%= flash[:notice] %> </p>
+		<%= yield %>
+	</body>
+
+</html>

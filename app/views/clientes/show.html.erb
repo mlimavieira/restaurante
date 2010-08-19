@@ -1,0 +1,13 @@
+&nbsp;<p>
+  <b>Nome:</b>
+  <%=h @cliente.nome %>
+</p>
+
+<p>
+  <b>Idade:</b>
+  <%=h @cliente.idade %>
+</p>
+
+
+<%= link_to 'Edit', edit_cliente_path(@cliente) %> &nbsp;
+<%= link_to 'Back', clientes_path %>

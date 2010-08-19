@@ -1,0 +1,26 @@
+<h1>Listagem de Restaurantes</h1>
+
+<table border="1">
+  <tr>
+    <th>nome</th>
+    <th>endereco</th>
+    <th>especialidade</th>
+    <th>...</th>
+  </tr>
+  <% for restaurante in @restaurantes %>
+    <tr>
+      <td><%=h restaurante.nome %></td>
+      <td><%=h restaurante.endereco %></td>
+      <td><%=h restaurante.especialidade %></td>
+      <td>
+	  <%= link_to 'Exibir', {:action=> 'show', :id=>restaurante} %> &nbsp;
+          <%= link_to 'Alterar', {:action=> 'edit', :id=>restaurante} %> &nbsp;
+          <%= link_to 'Deletar', {:action=> 'destroy', :id=>restaurante} %> &nbsp;
+	</td>
+    </tr>
+  <%end%>
+</table>
+<%= will_paginate @restaurantes %>
+<br />
+<%= link_to 'Novo restaurante', {:action =>'new'} %>
+  

@@ -1,0 +1,67 @@
+Script iniciado em Qua 11 Ago 2010 19:36:23 BRT
+]0;rr1515@caelum3-sala1: ~/restauranterr1515@caelum3-sala1:~/restaurante$ script/serverrake db:migrate[2Pscript/server[Kscript generate migration add_column_especia lidade_restaurante[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/ generate migration add_column_especialidade_restaurante[A]0;rr1515@caelum3-sala1: ~/restauranterr1515@caelum3-sala1:~/restaurante$ [C[C[C[C[C[C[Cgenerate migration add_column_especial[1Pidade_restaurante[A]0;rr1515@caelum3-sala1: ~/restauranterr1515@caelum3-sala1:~/restaurante$ [C[C[C[C[C[C[C
+
+      exists  db/migrate
+      create  db/migrate/20100811223814_add_column_especialidade_restaurante.rb
+]0;rr1515@caelum3-sala1: ~/restauranterr1515@caelum3-sala1:~/restaurante$ dv[Kb:migraterdb:migrateadb:migratekdb:migrateedb:migrate db:migrate[C[C[C[C[C[C[C[C[C[C;[K
+(in /home/rr1515/restaurante)
+==  AddColumnEspecialidadeRestaurante: migrating ==============================
+-- add_column(:restaurantes, :especialidade, :string, {:limit=>40})
+   -> 0.2746s
+==  AddColumnEspecialidadeRestaurante: migrated (0.2748s) =====================
+
+]0;rr1515@caelum3-sala1: ~/restauranterr1515@caelum3-sala1:~/restaurante$ script/console
+Loading development environment (Rails 2.3.5)
+>> r= [Krestaurante.nil
+NameError: undefined local variable or method `restaurante' for #<Object:0xb7d4594c>
+	from (irb):1
+>> r=restaurante.nil\\[K[K[K[Kew[1Pestaurante.new[C[C[C[C[CRestaurante.new[C[C[C[C[C[C
+=> #<Restaurante id: nil, nome: nil, endereco: nil, created_at: nil, updated_at: nil, especialidade: nil>
+>> r.nome = : [K[K"Fasano"
+=> "Fasano"
+>> r.endereco = "Av. dos Restaurantes, 126"
+=> "Av. dos Restaurantes, 126"
+>> r.especialidade="Comida Itati[K[Kt[Kliana"
+=> "Comida Italiana"
+>> r,save[K[K[K[K[K.save
+=> true
+>> 
+?> r=Restaurante.new do ||r|[C
+?> r.m[Knome =Fas[K[K[K[K [K[K = "Faza[K[Ksano"
+>> r.endereco = Av[K[K"Acv[K[Kv. dos res[K[K[KRestai[Kurantes, 126"
+>> puts r.id
+>> exit
+>> 
+?> ^C
+>> quit
+
+]0;rr1515@caelum3-sala1: ~/restauranterr1515@caelum3-sala1:~/restaurante$ gen lisi[K[Kst open
+O programa 'gen' não está instalado atualmente.  Para executar 'gen' por favor peça ao seu administrador para instalar o pacote 'multimon'
+bash: gen: comando não encontrado
+]0;rr1515@caelum3-sala1: ~/restauranterr1515@caelum3-sala1:~/restaurante$ gem installop[K[K io[K[Kopen_gem
+WARNING:  Installing to ~/.gem since /usr/lib/ruby/gems/1.8 and
+	  /usr/bin aren't both writable.
+WARNING:  You don't have /home/rr1515/.gem/ruby/1.8/bin in your PATH,
+	  gem executables will not run.
+Successfully installed configuration-1.1.0
+Successfully installed launchy-0.3.7
+Successfully installed open_gem-1.4.2
+3 gems installed
+Installing ri documentation for configuration-1.1.0...
+Installing ri documentation for launchy-0.3.7...
+Installing ri documentation for open_gem-1.4.2...
+Installing RDoc documentation for configuration-1.1.0...
+Installing RDoc documentation for launchy-0.3.7...
+Installing RDoc documentation for open_gem-1.4.2...
+]0;rr1515@caelum3-sala1: ~/restauranterr1515@caelum3-sala1:~/restaurante$ gem openactive[K[K[K[K[K[K active_record
+/active_record/ is not available
+]0;rr1515@caelum3-sala1: ~/restauranterr1515@caelum3-sala1:~/restaurante$ gem open active_record[C[C[1Precord-record
+/active\-record/ is not available
+]0;rr1515@caelum3-sala1: ~/restauranterr1515@caelum3-sala1:~/restaurante$ gem list
+
+*** LOCAL GEMS ***
+
+actionmailer (2.3.5)
+actionpack (2.3.5)
+activerecord (2.3.5)
+a
